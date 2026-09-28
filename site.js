@@ -35,3 +35,14 @@ if (modal) {
   modal.querySelector('.lightbox-close').addEventListener('click', () => modal.close());
   modal.addEventListener('click', event => { if (event.target === modal) modal.close(); });
 }
+const auditDetails = document.getElementById('audit-details');
+if (auditDetails) {
+  const openAuditForChapter = () => {
+    if (/^#section-\d+$/.test(window.location.hash)) auditDetails.open = true;
+  };
+  document.querySelectorAll('a[href^="#section-"]').forEach(link => {
+    link.addEventListener('click', () => { auditDetails.open = true; });
+  });
+  window.addEventListener('hashchange', openAuditForChapter);
+  openAuditForChapter();
+}

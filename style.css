@@ -110,3 +110,22 @@ html{scroll-padding-top:24px}
 .hero-photo span{bottom:75px;right:32px}
 .hero-bottom{position:relative;z-index:2}
 @media(max-width:780px){.hero-photo{opacity:1}.hero-photo:before{background:linear-gradient(90deg,#142923e8,#142923aa 80%),linear-gradient(0deg,#142923a8,transparent 30%)}.hero-photo video{object-position:65% center}}
+
+/* The source audit lives inside the proposal as one expandable section. */
+.audit-count{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d0dcd1;white-space:nowrap;align-self:end}
+.embedded-audit{margin-top:42px;border:1px solid #789285;border-radius:12px;overflow:hidden;background:#f6f8f3;color:var(--ink)}
+.embedded-audit>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 28px;font-size:19px;font-weight:600;color:#1d3c2b}
+.embedded-audit>summary::-webkit-details-marker{display:none}
+.embedded-audit>summary span{font-size:24px;font-weight:400;transition:transform .2s}
+.embedded-audit[open]>summary span{transform:rotate(180deg)}
+.embedded-audit[open]>summary{border-bottom:1px solid #d6e1d6}
+.embedded-audit-content{padding:42px 5% 10px}
+.embedded-audit .document-title{margin-bottom:34px}
+.embedded-audit .doc-section{scroll-margin-top:80px}
+.embedded-audit .section-body>p{color:#455c4b}
+@media(max-width:900px){.audit-count{align-self:start}.embedded-audit-content{padding:28px 20px 8px}}
+.embedded-audit .doc-section h2{font-size:clamp(37px,4vw,58px);line-height:1.05;letter-spacing:-.05em;font-weight:500;margin:14px 0 12px}
+.source-teaser .embedded-audit p:not(.eyebrow){max-width:none;margin:0 0 15px;color:#455c4b;font-size:16px;line-height:1.62}
+.source-teaser .embedded-audit .document-title{margin:0 0 34px;color:#8b6974;font-size:15px}
+.source-teaser .embedded-audit .image-source{font-size:12px;line-height:1.4}
+.source-teaser .embedded-audit .source-price{margin:15px 0;padding:17px}
