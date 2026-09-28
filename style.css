@@ -84,3 +84,29 @@ html{scroll-padding-top:24px}
 @media(max-width:900px){html{scroll-padding-top:73px}.proposal-body,.proposal-page > .footer{margin-left:0}.proposal-body .shell{width:min(100% - 38px,1080px)}.proposal-sidebar{inset:0 0 auto;width:100%;height:62px;padding:0 12px;border-right:0;border-bottom:1px solid #d8e3d9;transform:translateY(-100%);display:block;overflow:hidden}.proposal-sidebar.visible{transform:none}.sidebar-brand,.sidebar-cta{display:none}.proposal-sidebar nav{display:flex;align-items:center;gap:4px;margin:0;height:100%;overflow-x:auto;scrollbar-width:none;white-space:nowrap}.proposal-sidebar nav::-webkit-scrollbar{display:none}.proposal-sidebar nav a{font-size:13px;padding:10px 11px;gap:5px}.proposal-sidebar nav small{font-size:9px}.hero-copy{min-height:0}.hero-photo{min-height:390px}.current-card{min-height:270px}.current-card .shot{min-height:270px}.story{gap:25px}.story figure .shot{height:290px}.source-teaser-inner{grid-template-columns:1fr;gap:30px}}
 @media(max-width:650px){.hero-brand{margin-bottom:37px}.hero-text{padding:74px 0 55px}.hero-photo{min-height:330px}.proposal-body .section{padding:72px 0}.proposal-body .section-heading h2{font-size:clamp(42px,10vw,58px)}.current-card{display:flex;flex-direction:column}.current-card:nth-child(even) .shot,.current-card:nth-child(even) figcaption{order:initial}.current-card .shot{height:255px;min-height:0}.current-card figcaption{padding:22px}.current-card h4{font-size:28px;margin:13px 0}.story,.story.reverse{display:flex;flex-direction:column;gap:20px;padding:39px 0}.story .story-copy,.story.reverse .story-copy,.story figure,.story.reverse figure{order:initial;max-width:none}.story figure .shot{height:300px}.market-card{display:flex;flex-direction:column}.market-card .shot{height:235px;min-height:0}.market-card div{min-height:230px;padding:22px}.market-card h3{font-size:26px}.source-teaser h2{font-size:clamp(42px,10vw,58px)}}
 @media(prefers-reduced-motion:reduce){.proposal-sidebar,.shot img,.btn{transition:none}html{scroll-behavior:auto}}
+
+/* Keep the opening cover within a laptop viewport. */
+.hero-copy{min-height:0}
+.hero-text{padding:54px 0 50px}
+.hero-photo{min-height:0}
+.hero-photo{background:#24372f url('assets/brand/prezident-video-poster.jpg') center / cover no-repeat}
+.hero-photo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center}
+.hero-brand{margin-bottom:24px}
+.overline{margin-bottom:22px}
+.hero h1{font-size:clamp(56px,5.1vw,74px)}
+.hero-text>p{font-size:17px;margin-top:20px;max-width:510px}
+.hero-actions{margin-top:27px}
+.hero-bottom{min-height:56px}
+@media(max-width:900px){.hero-photo{min-height:0}}
+@media(max-width:780px){.hero-copy{display:block;position:relative;min-height:0}.hero-text{position:relative;z-index:2;padding:62px 0 58px;max-width:630px}.hero-photo{position:absolute;inset:0;min-height:0;margin:0;opacity:.38}.hero-photo:before{background:linear-gradient(90deg,#182e29 0%,#182e29ad 55%,#182e294d 100%)}.hero-photo video{object-position:65% center}.hero-photo span{display:none}.hero h1{font-size:clamp(52px,8.8vw,70px)}.hero-bottom{position:relative;z-index:2;min-height:54px}}
+@media(max-width:540px){.hero-text{padding:45px 0 46px}.hero-brand{margin-bottom:22px}.overline{margin-bottom:18px}.hero h1{font-size:clamp(47px,11.5vw,60px)}.hero-text>p{font-size:16px;line-height:1.4;margin-top:18px}.hero-actions{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){.hero-photo video{display:none}}
+.hero{position:relative;background:#182c27}
+.hero-copy{display:block;position:relative;z-index:2}
+.hero-text{max-width:720px;position:relative;z-index:2}
+.hero-photo{position:absolute;inset:0;min-height:0;margin:0;opacity:1;z-index:0}
+.hero-photo:before{background:linear-gradient(90deg,#142923ed 0%,#142923d4 34%,#14292363 70%,#14292330 100%),linear-gradient(0deg,#1429238c,transparent 22%)}
+.hero-photo video{object-position:center}
+.hero-photo span{bottom:75px;right:32px}
+.hero-bottom{position:relative;z-index:2}
+@media(max-width:780px){.hero-photo{opacity:1}.hero-photo:before{background:linear-gradient(90deg,#142923e8,#142923aa 80%),linear-gradient(0deg,#142923a8,transparent 30%)}.hero-photo video{object-position:65% center}}
