@@ -129,3 +129,57 @@ html{scroll-padding-top:24px}
 .source-teaser .embedded-audit .document-title{margin:0 0 34px;color:#8b6974;font-size:15px}
 .source-teaser .embedded-audit .image-source{font-size:12px;line-height:1.4}
 .source-teaser .embedded-audit .source-price{margin:15px 0;padding:17px}
+
+/* Editorial layout for the complete source audit. */
+.embedded-audit-content{background:#f5f7f1;padding:0 4% 56px}
+.audit-chapters{position:sticky;top:0;z-index:3;background:#f5f7f1f5;border-bottom:1px solid #c9d7cc;padding:22px 0 18px;backdrop-filter:blur(14px)}
+.audit-chapters-label{display:block;color:#8c6573;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:13px}
+.audit-chapter-links{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+.audit-chapter-links a{min-height:55px;padding:10px 11px;background:#fff;border:1px solid #d7e2d9;border-radius:7px;color:#284536;text-decoration:none;font-size:12px;line-height:1.25;display:flex;align-items:center;gap:9px;transition:background .2s,border-color .2s}
+.audit-chapter-links a:hover,.audit-chapter-links a:focus-visible{background:#e2ece3;border-color:#8cae98}
+.audit-chapter-links small{color:#9a6c7a;font-size:11px;font-weight:700}
+.embedded-audit .audit-document{max-width:none;padding-top:42px}
+.embedded-audit .document-title{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8b6974;margin-bottom:24px}
+.embedded-audit .doc-section{background:#fff;border:1px solid #d5dfd5;border-radius:16px;margin:0 0 28px;padding:clamp(24px,4vw,52px);box-shadow:0 14px 35px #18382b0a;scroll-margin-top:190px}
+.embedded-audit .doc-section header{border-bottom:1px solid #d8e2d9;padding-bottom:24px;margin-bottom:30px}
+.embedded-audit .doc-section h2{max-width:920px;font-size:clamp(37px,4vw,58px);line-height:1.04;margin:14px 0 14px}
+.embedded-audit .section-preview{font-size:14px;color:#6f8875}
+.embedded-audit .section-body{max-width:none}
+.source-teaser .embedded-audit .section-body>p:not(.eyebrow){max-width:780px;margin:0 0 18px;line-height:1.66}
+.embedded-audit .section-body h3{font-size:29px;margin:45px 0 17px;color:#1f3f31}
+.embedded-audit .section-body strong{font-weight:700;color:#173c2b;background:linear-gradient(transparent 64%,#dfe9dc 64%)}
+.audit-opening{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#d5e1d6;border:1px solid #d5e1d6;border-radius:11px;overflow:hidden;margin-bottom:37px}
+.audit-opening p{margin:0!important;padding:23px 26px;background:#eaf1e9;color:#2d4c38!important;line-height:1.55!important;font-size:16px!important}
+.audit-opening p:first-child{grid-column:1/-1;background:#dceadd;font-size:18px!important}
+.audit-opening p:nth-child(3){background:#f5f8f1}
+.audit-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 36px}
+.audit-fact{background:#e9f0e8;border:1px solid #d5e2d6;border-radius:10px;padding:22px;min-width:0}
+.audit-fact span{font-size:11px;color:#9c7781}
+.embedded-audit .audit-fact h3{font-size:17px;margin:15px 0 9px}
+.source-teaser .embedded-audit .audit-fact p:not(.eyebrow){font-size:14px;line-height:1.53;margin:0;color:#435b49}
+.embedded-audit .source-list{background:#edf3ec;border:1px solid #dbe7db;padding:19px 23px 19px 42px;max-width:780px}
+.embedded-audit .source-list li::marker{color:#a47482}
+.embedded-audit .doc-figure{display:table;max-width:100%;margin:28px auto 44px;background:#e5eee5;border:1px solid #c9dacc;border-radius:15px;padding:14px;box-shadow:0 12px 30px #254a3520}
+.embedded-audit .doc-figure .zoom{display:block;background:#fff;border:1px solid #d9e5da;border-radius:9px;padding:9px;max-width:100%}
+.embedded-audit .doc-figure img{display:block;max-width:100%;max-height:620px;object-fit:contain;border-radius:4px}
+.embedded-audit .doc-figure figcaption{color:#456450;font-size:11px;margin:12px 4px 1px;max-width:650px}
+.embedded-audit .figure-pair{gap:18px}
+.embedded-audit .figure-pair .doc-figure{display:block;margin:24px 0 34px}
+.embedded-audit .market-table{margin:28px 0;overflow:visible}
+.embedded-audit .market-table table{display:block;min-width:0;background:none;border:0}
+.embedded-audit .market-table thead{display:none}
+.embedded-audit .market-table tbody{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.embedded-audit .market-table tr{display:grid;grid-template-columns:1fr;gap:0;background:#f7faf5;border:1px solid #d3e0d5;border-radius:10px;padding:20px;min-width:0}
+.embedded-audit .market-table td{display:block;border:0;padding:0 0 10px;font-size:13px;line-height:1.5}
+.embedded-audit .market-table td:first-child{font-size:19px;color:#1c4830;padding-bottom:3px}
+.embedded-audit .market-table td:nth-child(2){font-size:11px;color:#9a6977;text-transform:uppercase;letter-spacing:.06em}
+.embedded-audit .market-table td:nth-child(3)::before,.embedded-audit .market-table td:nth-child(4)::before{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#829888;margin-bottom:5px}
+.embedded-audit .market-table td:nth-child(3)::before{content:'Наблюдение'}
+.embedded-audit .market-table td:nth-child(4)::before{content:'Что использовать'}
+.embedded-audit .market-table td:nth-child(4){border-top:1px solid #dce7dd;padding-top:10px;padding-bottom:0;color:#244734;font-weight:600}
+.embedded-audit .source-gallery{gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.embedded-audit .source-entry{background:#f7faf5;border:1px solid #d4e1d6;border-radius:11px;padding:15px}
+.embedded-audit .source-entry .doc-figure{display:block;margin:16px 0 0;padding:8px;box-shadow:none}
+.embedded-audit .source-entry .doc-figure img{height:260px;width:100%;object-fit:contain}
+@media(max-width:1150px){.audit-chapter-links{grid-template-columns:repeat(4,minmax(0,1fr))}.embedded-audit .doc-section{scroll-margin-top:250px}}
+@media(max-width:760px){.audit-chapters{position:static}.audit-chapter-links{grid-template-columns:repeat(2,minmax(0,1fr))}.audit-opening,.audit-facts,.embedded-audit .market-table tbody,.embedded-audit .source-gallery{grid-template-columns:1fr}.audit-opening p:first-child{grid-column:auto}.embedded-audit .doc-section{padding:25px 20px;scroll-margin-top:80px}.embedded-audit-content{padding:0 16px 30px}.embedded-audit .doc-section h2{font-size:35px}}
