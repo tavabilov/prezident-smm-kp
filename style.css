@@ -183,3 +183,13 @@ html{scroll-padding-top:24px}
 .embedded-audit .source-entry .doc-figure img{height:260px;width:100%;object-fit:contain}
 @media(max-width:1150px){.audit-chapter-links{grid-template-columns:repeat(4,minmax(0,1fr))}.embedded-audit .doc-section{scroll-margin-top:250px}}
 @media(max-width:760px){.audit-chapters{position:static}.audit-chapter-links{grid-template-columns:repeat(2,minmax(0,1fr))}.audit-opening,.audit-facts,.embedded-audit .market-table tbody,.embedded-audit .source-gallery{grid-template-columns:1fr}.audit-opening p:first-child{grid-column:auto}.embedded-audit .doc-section{padding:25px 20px;scroll-margin-top:80px}.embedded-audit-content{padding:0 16px 30px}.embedded-audit .doc-section h2{font-size:35px}}
+
+/* The audit is the first chapter after the video cover. */
+.proposal-body>#full-audit{background:#e9eee7;color:#183d2b;padding-top:74px}
+.proposal-body>#full-audit .source-teaser-inner{align-items:end}
+.proposal-body>#full-audit .eyebrow{color:#946e7b}
+.proposal-body>#full-audit h2{color:#193d2b}
+.proposal-body>#full-audit h2 em{color:#a16f7f}
+.proposal-body>#full-audit .source-teaser-inner p:not(.eyebrow){color:#4f6b58}
+.proposal-body>#full-audit .audit-count{color:#69816e}
+.proposal-body>#full-audit .embedded-audit{border-color:#bdcebf;box-shadow:0 24px 70px #244f3520}
